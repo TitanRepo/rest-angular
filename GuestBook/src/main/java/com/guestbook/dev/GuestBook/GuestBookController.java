@@ -17,8 +17,8 @@ public class GuestBookController {
 	}
 	
 	@GetMapping("/getGuests")
-	@CrossOrigin(origins="http://localhost:4200")
+	@CrossOrigin(origins="**")
 	public Collection<GuestBookEntity> getGuestList() {
-		return repository.findAll();
+		return (Collection<GuestBookEntity>) repository.findAll();
 	}
 }
