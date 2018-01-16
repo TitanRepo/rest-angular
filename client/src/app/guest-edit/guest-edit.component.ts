@@ -31,7 +31,7 @@ export class GuestEditComponent implements OnInit, OnDestroy {
             this.guest = guest;
             this.guest.href = guest._links.self.href;
           } else {
-            console.log(`Car with id '${id}' not found, returning to list`);
+            console.log(`Guest with id '${id}' not found, returning to list`);
             this.gotoList();
           }
         });

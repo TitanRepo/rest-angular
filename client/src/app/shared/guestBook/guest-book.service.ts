@@ -12,7 +12,7 @@ export class GuestBookService {
   }
 
   get(id: string) {
-    return this.http.get('//localhost:8080/guestBookEntitys/' + id);
+    return this.http.get('//localhost:8080/guestBookEntities/' + id);
   }
 
   save(guest: any): Observable<any> {
@@ -20,7 +20,7 @@ export class GuestBookService {
     if (guest['href']) {
       result = this.http.put(guest.href, guest);
     } else {
-      result = this.http.post('//localhost:8080/guestBookEntitys/', guest);
+      result = this.http.post('//localhost:8080/guestBookEntities/', guest);
     }
     return result;
   }

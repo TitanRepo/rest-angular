@@ -4,7 +4,7 @@
 	<div>
 		<input type="hidden" name="href" [(ngModel)]="guest.href">
 		<input placeholder="Guest Name" [(ngModel)]="guest.guestName"
-               required name="name" #name>
+               required name="guestName" #guestName>
         <button color="primary" type="submit"
               [disabled]="!guestForm.form.valid">Save</button>
 		<button color="secondary" (click)="remove(guest.href)"
