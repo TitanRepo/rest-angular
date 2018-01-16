@@ -1,0 +1,6 @@
+<h2>Arrived Guests</h2>
+<div *ngFor="let guest of guests">
+  <a [routerLink]="['/guest-edit',guest.id]">{{guest.guestName}}</a>
+</div>
+<button color="primary" [routerLink]="['/guest-add']">Add</button>
+

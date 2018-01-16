@@ -1,0 +1,15 @@
+<h2>Guest</h2>
+<form #guestForm="ngForm" (ngSubmit)="save(guestForm.value)">
+	<h3>{{guest.guestName ? 'Edit' : 'Add'}} Guest</h3>
+	<div>
+		<input type="hidden" name="href" [(ngModel)]="guest.href">
+		<input placeholder="Guest Name" [(ngModel)]="guest.guestName"
+               required name="name" #name>
+        <button color="primary" type="submit"
+              [disabled]="!guestForm.form.valid">Save</button>
+		<button color="secondary" (click)="remove(guest.href)"
+              *ngIf="guest.href" type="button">Delete</button>
+        
+        <button [routerLink]="['/guest-book']" type="submit">Cancel</button>
+	</div>
+</form>
