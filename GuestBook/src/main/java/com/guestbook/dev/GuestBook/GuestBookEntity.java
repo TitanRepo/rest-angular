@@ -26,7 +26,7 @@ public class GuestBookEntity {
     @Temporal(javax.persistence.TemporalType.TIMESTAMP)
     private Date createdDate;*/
     private String comment;
-	public Long getId() {
+/*	public Long getId() {
 		return id;
 	}
 	public void setId(Long id) {
@@ -38,17 +38,17 @@ public class GuestBookEntity {
 	public void setGuestName(String guestName) {
 		this.guestName = guestName;
 	}
-/*	public Date getCreatedDate() {
+*//*	public Date getCreatedDate() {
 		return createdDate;
 	}
 	public void setCreatedDate(Date createdDate) {
 		this.createdDate = createdDate;
 	}
-*/	public String getComment() {
+*//*	public String getComment() {
 		return comment;
 	}
 	public void setComment(String comment) {
 		this.comment = comment;
 	}
-    
+*/    
 }
